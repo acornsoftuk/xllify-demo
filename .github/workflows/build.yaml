@@ -1,0 +1,18 @@
+name: xllify build
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: xllify Build
+        uses: acornsoftuk/xllify-build@v1alpha
+        with:
+          luau_files: |
+            function.luau
+          xllify_key: abcdefg-unused
