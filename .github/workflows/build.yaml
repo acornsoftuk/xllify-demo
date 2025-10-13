@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: xllify Build
-        uses: acornsoftuk/xllify-build@v1alpha
+        uses: acornsoftuk/xllify-build@v1alpha2
         with:
           luau_files: |
             function.luau
