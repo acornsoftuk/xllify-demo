@@ -14,5 +14,6 @@ jobs:
         uses: acornsoftuk/xllify-build@v1alpha2
         with:
           luau_files: |
-            function.luau
+            hello.luau
+            demo_data.luau
           xllify_key: abcdefg-unused
