@@ -6,7 +6,7 @@ This repo demonstrates using [xllify.com](https://xllify.com) by implementing so
 
 For more information about the action, see https://github.com/acornsoftuk/xllify-build or the workflow in this repo.
 
-After downloading and installing from the releases page, Excel should show these shiny new functions.
+After downloading and installing from the [releases page](https://github.com/acornsoftuk/xllify-demo/releases/latest), Excel should show these shiny new functions.
 
 ![Insert function](./screenshots/insert.png)
 ![Function preview](./screenshots/preview.png)
