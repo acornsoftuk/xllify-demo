@@ -14,10 +14,7 @@ jobs:
         uses: acornsoftuk/xllify-build@v0.1.0-alpha
         with:
           xll_filename: hello.xll
-          luau_files: |
-            hello.luau
-            demo_data.luau
-
+          luau_files: hello.luau
           xllify_key: ${{ secrets.XLLIFY_KEY }}
 
       # The .xll is now in your workspace!
