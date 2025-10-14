@@ -1,10 +1,20 @@
 # xllify-demo
 
-This repo demonstrates using [xllify.com](https://xllify.com) by implementing some simple custom functions in Luau. The xllify service handles the build and packaging process.
+> We're releasing this week! This is just a preview.
 
-For more information about the action, see https://github.com/acornsoftuk/xllify-build
+This repo demonstrates using [xllify.com](https://xllify.com) by implementing some simple custom functions in Luau. The xllify service handles the build and packaging process. An .xll file for Windows Excel is attached when a release is created in this repo.
+
+For more information about the action, see https://github.com/acornsoftuk/xllify-build or the workflow in this repo.
+
+After downloading and installing from the releases page, Excel should show these shiny new functions.
+
+![Insert function](./screenshots/insert.png)
+![Function preview](./screenshots/preview.png)
+![All](./screenshots/all.png)
 
 ## Available functions
+
+These are all defined in [hello.luau](./hello.luau). Note that they are intended only as illustrations to demonstrate xllify, their logic may not be entirely correct.
 
 ### xllify.Demo.Hello
 
