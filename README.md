@@ -8,8 +8,6 @@ For more information about the action, see https://github.com/acornsoftuk/xllify
 
 ### xllify.Demo.Hello
 
-**Category:** xllify Demos
-
 **Description:** Says hello!
 
 **Parameters:**
@@ -29,8 +27,6 @@ For more information about the action, see https://github.com/acornsoftuk/xllify
 ---
 
 ### xllify.Demo.AgeCategory
-
-**Category:** xllify Demos
 
 **Description:** Determines your life stage based on age
 
