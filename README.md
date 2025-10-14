@@ -1,6 +1,6 @@
 # xllify-demo
 
-> We're releasing this week! This is just a preview.
+> We're not yet public. This is just a preview.
 
 This repo demonstrates using [xllify.com](https://xllify.com) by implementing some simple custom functions in Luau. The xllify service handles the build and packaging process. An .xll file for Windows Excel is attached when a release is created in this repo.
 
