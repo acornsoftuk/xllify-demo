@@ -9,13 +9,13 @@ on:
 
 jobs:
   build:
-    name: xllify and publish
+    name: xllify Demo add-in
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: xllify Remote Build
         id: xllify
-        uses: acornsoftuk/xllify-build@v0.2.0-beta
+        uses: acornsoftuk/xllify-build@v0.2.1-beta
         with:
           xll_filename: hello.xll
           luau_files: hello.luau
