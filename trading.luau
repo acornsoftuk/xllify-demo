@@ -125,34 +125,6 @@ xllify.ExcelFunction({
     return (annual_return - risk_free_rate) / vol
 end)
 
--- =============================================================================
--- Market Simulation - Monte Carlo
--- =============================================================================
-
--- Simple RNG using PCG algorithm (deterministic seed)
-local rng_state = 0x853c49e6748fea9b
-local rng_inc = 0xda3e39cb94b95bdb
-
-local function seed_rng(seed)
-    rng_state = seed or os.time()
-    rng_inc = 0xda3e39cb94b95bdb
-end
-
-local function random_u32()
-    local oldstate = rng_state
-    rng_state = ((oldstate * 6364136223846793005) + rng_inc) % (2^64)
-    
-    -- Use bit32 functions for bitwise operations
-    local xorshifted = bit32.rshift(bit32.bxor(bit32.rshift(oldstate, 18), oldstate), 27) % (2^32)
-    local rot = bit32.rshift(oldstate, 59) % 32
-    
-    return bit32.bor(bit32.rshift(xorshifted, rot), bit32.lshift(xorshifted, bit32.band(-rot, 31))) % (2^32)
-end
-
-local function random()
-    return random_u32() / (2^32)
-end
-
 -- Box-Muller transform for normal distribution
 local function random_normal()
     local u1 = random()
