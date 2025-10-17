@@ -285,7 +285,7 @@ The function returns a dynamic array with 4 columns:
 
 ### Simulation.PricePath
 
-**File:** `trading.luau:163`
+**File:** `trading.luau:140`
 
 **Description:** Simulate geometric Brownian motion price path
 
@@ -321,7 +321,7 @@ The function returns a dynamic array with 4 columns:
 
 ### Simulation.MonteCarlo
 
-**File:** `trading.luau:189`
+**File:** `trading.luau:166`
 
 **Description:** Run Monte Carlo option pricing simulation
 
@@ -355,7 +355,7 @@ The function returns a dynamic array with 4 columns:
 
 ### Trading.VWAP
 
-**File:** `trading.luau:228`
+**File:** `trading.luau:205`
 
 **Description:** Calculate volume-weighted average price
 
@@ -385,7 +385,7 @@ VWAP = Σ(price[i] × volume[i]) / Σ(volume[i])
 
 ### Trading.Slippage
 
-**File:** `trading.luau:259`
+**File:** `trading.luau:236`
 
 **Description:** Calculate execution slippage vs benchmark
 
@@ -417,7 +417,7 @@ VWAP = Σ(price[i] × volume[i]) / Σ(volume[i])
 
 ### Technical.SMA
 
-**File:** `trading.luau:294`
+**File:** `trading.luau:271`
 
 **Description:** Simple moving average
 
@@ -449,7 +449,7 @@ VWAP = Σ(price[i] × volume[i]) / Σ(volume[i])
 
 ### Technical.EMA
 
-**File:** `trading.luau:330`
+**File:** `trading.luau:307`
 
 **Description:** Exponential moving average
 
@@ -478,7 +478,7 @@ VWAP = Σ(price[i] × volume[i]) / Σ(volume[i])
 
 ### Technical.RSI
 
-**File:** `trading.luau:373`
+**File:** `trading.luau:350`
 
 **Description:** Relative Strength Index
 
@@ -510,7 +510,7 @@ VWAP = Σ(price[i] × volume[i]) / Σ(volume[i])
 
 ### Bond.Price
 
-**File:** `trading.luau:453`
+**File:** `trading.luau:430`
 
 **Description:** Calculate bond price from yield
 
@@ -542,7 +542,7 @@ VWAP = Σ(price[i] × volume[i]) / Σ(volume[i])
 
 ### Bond.Duration
 
-**File:** `trading.luau:481`
+**File:** `trading.luau:458`
 
 **Description:** Calculate Macaulay duration
 
@@ -576,7 +576,7 @@ VWAP = Σ(price[i] × volume[i]) / Σ(volume[i])
 
 ### Risk.VaR
 
-**File:** `trading.luau:518`
+**File:** `trading.luau:495`
 
 **Description:** Calculate Value at Risk (historical method)
 
@@ -608,7 +608,7 @@ VWAP = Σ(price[i] × volume[i]) / Σ(volume[i])
 
 ### Risk.CVaR
 
-**File:** `trading.luau:546`
+**File:** `trading.luau:523`
 
 **Description:** Conditional VaR (Expected Shortfall)
 
@@ -640,7 +640,7 @@ VWAP = Σ(price[i] × volume[i]) / Σ(volume[i])
 
 ### Greeks.Delta
 
-**File:** `trading.luau:600`
+**File:** `trading.luau:577`
 
 **Description:** Option delta (sensitivity to underlying price)
 
@@ -677,7 +677,7 @@ VWAP = Σ(price[i] × volume[i]) / Σ(volume[i])
 
 ### Greeks.Gamma
 
-**File:** `trading.luau:622`
+**File:** `trading.luau:599`
 
 **Description:** Option gamma (rate of change of delta)
 
@@ -710,7 +710,7 @@ VWAP = Σ(price[i] × volume[i]) / Σ(volume[i])
 
 ### Greeks.Vega
 
-**File:** `trading.luau:636`
+**File:** `trading.luau:613`
 
 **Description:** Option vega (sensitivity to volatility)
 
@@ -743,7 +743,7 @@ VWAP = Σ(price[i] × volume[i]) / Σ(volume[i])
 
 ### Greeks.Theta
 
-**File:** `trading.luau:650`
+**File:** `trading.luau:627`
 
 **Description:** Option theta (time decay)
 

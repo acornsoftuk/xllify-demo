@@ -6,7 +6,7 @@ A good way to get started is to [fork this repo](https://github.com/acornsoftuk/
 
 For more information about the action, see https://github.com/acornsoftuk/xllify-build or the workflow in this repo.
 
-For comprehensive documentation of all available functions, see [DOCS.md](./DOCS.md).
+For comprehensive documentation of all available functions, see [DOCS.md](./DOCS.md). Note that xllifyAI wrote some of this code so best not to use these for anything other than an illustration, unless of course you know what you're doing.
 
 After downloading and installing from the [releases page](https://github.com/acornsoftuk/xllify-demo/releases/latest), Excel should show the shiny new functions.
 

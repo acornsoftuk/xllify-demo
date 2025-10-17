@@ -6,6 +6,7 @@
 -- Portfolio Analytics
 -- =============================================================================
 
+local xllify = {ExcelFunction = function(a,b) end}
 -- Calculate portfolio returns from price data
 xllify.ExcelFunction({
     name = "Portfolio.Returns",
@@ -125,10 +126,14 @@ xllify.ExcelFunction({
     return (annual_return - risk_free_rate) / vol
 end)
 
+local function seed_rng(seed)
+    math.randomseed(seed or os.time())
+end
+
 -- Box-Muller transform for normal distribution
 local function random_normal()
-    local u1 = random()
-    local u2 = random()
+    local u1 = math.random()
+    local u2 = math.random()
     return math.sqrt(-2 * math.log(u1)) * math.cos(2 * math.pi * u2)
 end
 
