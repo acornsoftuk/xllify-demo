@@ -6,10 +6,10 @@ A good way to get started is to [fork this repo](https://github.com/acornsoftuk/
 
 For more information about the action, see https://github.com/acornsoftuk/xllify-build or the workflow in this repo.
 
-After downloading and installing from the [releases page](https://github.com/acornsoftuk/xllify-demo/releases/latest), Excel should show these shiny new functions.
+For comprehensive documentation of all available functions, see [DOCS.md](./DOCS.md).
+
+After downloading and installing from the [releases page](https://github.com/acornsoftuk/xllify-demo/releases/latest), Excel should show the shiny new functions.
 
 ![Insert function](./screenshots/insert.png)
 ![Function preview](./screenshots/preview.png)
 ![All](./screenshots/all.png)
-
-For comprehensive documentation of all available functions, see [DOCS.md](./DOCS.md).
