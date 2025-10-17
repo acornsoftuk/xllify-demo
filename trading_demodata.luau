@@ -319,5 +319,3 @@ xllify.ExcelFunction({
 
     return portfolio
 end)
-
-log.info("Demo generators for trading & simulation examples loaded successfully")
