@@ -21,8 +21,6 @@ jobs:
           luau_files: |
             simple.luau
             black_scholes.luau
-            trading.luau
-            trading_demodata.luau
           xllify_key: ${{ secrets.XLLIFY_KEY }}
 
       # The .xll is now in your workspace. It is common to upload it as a release.
