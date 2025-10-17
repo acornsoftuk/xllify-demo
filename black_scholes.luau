@@ -1,3 +1,28 @@
+-- Normal CDF approximation using Abramowitz and Stegun method
+local function normCDF(x)
+    if x < -7 then
+        return 0
+    elseif x > 7 then
+        return 1
+    end
+
+    local sign = 1
+    if x < 0 then
+        sign = -1
+        x = -x
+    end
+
+    local t = 1 / (1 + 0.2316419 * x)
+    local y = t * (0.31938153 + t * (-0.356563782 + t * (1.781477937 + t * (-1.821255978 + t * 1.330274429))))
+    local z = math.exp(-x * x / 2) / math.sqrt(2 * math.pi)
+
+    if sign == 1 then
+        return 1 - z * y
+    else
+        return z * y
+    end
+end
+
 -- Black-Scholes formula for call and put options
 local function blackScholes(S, K, T, r, sigma, optionType)    
     if T <= 0 then
