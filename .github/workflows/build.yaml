@@ -30,7 +30,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: hello
+          name: xllify_demo
           path: ${{ steps.xllify.outputs.xll_path }}
 
       - name: Upload XLL to release
