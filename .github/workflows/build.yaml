@@ -20,11 +20,10 @@ jobs:
         with:
           xll_filename: xllify_demo
           luau_scripts: |
-            # path is temporary
-            ${{ github.workspace }}/simple.luau
-            ${{ github.workspace }}/black_scholes.luau
-            ${{ github.workspace }}/trading.luau
-            ${{ github.workspace }}/trading_demodata.luau
+            simple.luau
+            black_scholes.luau
+            trading.luau
+            trading_demodata.luau
           xllify_key: not-needed
 
       # The .xll is now in your workspace
