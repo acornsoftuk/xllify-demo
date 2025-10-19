@@ -22,7 +22,6 @@ jobs:
           luau_scripts: |
             simple.luau
             black_scholes.luau
-            trading.luau
             trading_demodata.luau
           xllify_key: not-needed
 
