@@ -1,6 +1,6 @@
 # xllify-demo
 
-This repo demonstrates using the [xllify-build](https://github.com/marketplace/actions/xllify-build) action to package some simple custom functions into an .xll. 
+This repo demonstrates using the [xllify-build](https://github.com/marketplace/actions/xllify-build) action to package some simple custom functions into an .xll. The workflow defined in build.yaml is extremely simple, [you can see it here](https://github.com/acornsoftuk/xllify-demo/blob/main/.github/workflows/build.yaml).
 
 The action handles the build and packaging process. An .xll file for Microsoft Excel on Windows is attached when a release is created in this repo. See https://xllify.com for more info.
 
