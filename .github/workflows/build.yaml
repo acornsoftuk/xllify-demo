@@ -13,24 +13,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: xllify Remote Build
+      - name: xllify Build
         id: xllify
-        uses: acornsoftuk/xllify-build@v0.2.2-beta
+        uses: ./
         with:
-          xll_filename: xllify_demo.xll
-          luau_files: |
+          xll_filename: xllify_demo
+          luau_scripts: |
             simple.luau
             black_scholes.luau
-          xllify_key: ${{ secrets.XLLIFY_KEY }}
+            trading.luau
+            trading_demodata.luau
+          xllify_key: not-needed
 
-      # The .xll is now in your workspace. It is common to upload it as a release.
-
-      - name: Upload XLL to release
-        if: startsWith(github.ref, 'refs/tags/')
-        run: |
-          TAG_NAME="${GITHUB_REF#refs/tags/}"
-          echo "Uploading ${{ steps.xllify.outputs.xll_path }} to release $TAG_NAME..."
-          gh release upload "$TAG_NAME" "${{ steps.xllify.outputs.xll_path }}" --clobber
-          echo "Successfully uploaded XLL to release $TAG_NAME"
-        env:
-          GH_TOKEN: ${{ github.token }}
+      # The .xll is now in your workspace
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: hello
+          path: ${{ steps.xllify.outputs.xll_path }}

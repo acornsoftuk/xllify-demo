@@ -15,7 +15,7 @@ xllify.ExcelFunction({
     description = "Determines your life stage based on age",
     category = "xllify Demos",
     parameters = {
-        {name="age", description="Age in years"},
+        {name="age", description="Age in years 0-100"},
     },
 }, function(age: number)
     if age < 0 then
