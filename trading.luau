@@ -6,7 +6,6 @@
 -- Portfolio Analytics
 -- =============================================================================
 
-local xllify = {ExcelFunction = function(a,b) end}
 -- Calculate portfolio returns from price data
 xllify.ExcelFunction({
     name = "Portfolio.Returns",
