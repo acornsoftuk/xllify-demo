@@ -2,7 +2,6 @@
 -- Tests the demo functions: Hello, AgeCategory, and Portfolio
 
 xllify.TestSuite("Simple Demo Functions", function()
-
     -- =============================================================================
     -- xllify.Demo.Hello Tests
     -- =============================================================================
