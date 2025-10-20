@@ -25,7 +25,7 @@ jobs:
             trading_demodata.luau
           xllify_key: not-needed
 
-      # The .xll is now in your workspace
+      # The .xll is now in your workspace at path in ${{ steps.xllify.outputs.xll_path }}
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4

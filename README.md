@@ -1,8 +1,10 @@
 # xllify-demo
 
-This repo demonstrates using [xllify.com](https://xllify.com) by implementing some simple custom functions in Luau. The xllify service handles the build and packaging process. An .xll file for Microsoft Excel on Windows is attached when a release is created in this repo.
+This repo demonstrates using the [xllify-build](https://github.com/marketplace/actions/xllify-build) action to package some simple custom functions into an .xll. The workflow defined in build.yaml is extremely simple, [you can see it here](https://github.com/acornsoftuk/xllify-demo/blob/main/.github/workflows/build.yaml).
 
-A good way to get started is to [fork this repo](https://github.com/acornsoftuk/xllify-demo/fork) (remember to enable actions in your fork.
+The action handles the build and packaging process. An .xll file for Microsoft Excel on Windows is attached when a release is created in this repo. See https://xllify.com for more info.
+
+A good way to get started is to [fork this repo](https://github.com/acornsoftuk/xllify-demo/fork) (remember to enable actions in your fork.)
 
 For more information about the action, see https://github.com/acornsoftuk/xllify-build or the workflow in this repo.
 
