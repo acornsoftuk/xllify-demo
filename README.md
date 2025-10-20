@@ -10,6 +10,12 @@ For more information about the action, see https://github.com/acornsoftuk/xllify
 
 For comprehensive documentation of all available functions, see [DOCS.md](./DOCS.md). Note that xllifyAI wrote some of this code so best not to use these for anything other than an illustration, unless of course you know what you're doing.
 
+## Testing
+
+If you include a `tests/` directory in your repository, the xllify-build action will automatically discover and run your tests during the build process. If no `tests/` directory exists, the test runner will be skipped and the build will proceed normally. This makes testing completely optional but easy to add when you're ready.
+
+## Installation
+
 After downloading and installing from the [releases page](https://github.com/acornsoftuk/xllify-demo/releases/latest), Excel should show the shiny new functions.
 
 ![Insert function](./screenshots/insert.png)
