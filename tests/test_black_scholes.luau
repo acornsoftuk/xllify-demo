@@ -183,7 +183,6 @@ xllify.TestSuite("Black-Scholes Option Pricing", function()
 
     xllify.Test("Put should handle very small time to expiration", function()
         local result = xllify.Call("bs.Put", 95, 100, 0.001, 0.05, 0.2)
-        print(result)
         xllify.Assert.True(result >= 4.9 and result < 5.1, "Very short-dated ITM put ~ intrinsic")
     end)
 
@@ -207,7 +206,6 @@ xllify.TestSuite("Black-Scholes Option Pricing", function()
 
     xllify.Test("Put should handle zero risk-free rate", function()
         local result = xllify.Call("bs.Put", 100, 100, 1, 0, 0.2)
-        print(xllify.Assert.IsNumber)
         xllify.Assert.IsNumber(result)
         xllify.Assert.True(result > 0, "Put with r=0 should have positive value")
     end)
