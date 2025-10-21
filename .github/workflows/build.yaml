@@ -28,26 +28,11 @@ jobs:
             trading_demodata.luau
           xllify_key: not-needed
 
-      - name: Upload test-results artifact
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: test-results
-          path: ${{ steps.xllify.outputs.test_results_path }}
-          
-      - name: Test report
-        uses: dorny/test-reporter@v2
-        if: always()
-        with:
-          name: xllify Tests
-          path: ${{ steps.xllify.outputs.test_results_path }}   
-          reporter: java-junit
-          
       # The .xll is now in your workspace at path in ${{ steps.xllify.outputs.xll_path }}
       # Do with it what you want. Sign it (recommended), upload it to a release, cloud storage
       # etc...
 
-      - name: Upload artifact
+      - name: Upload XLL to workflow job
         uses: actions/upload-artifact@v4
         with:
           name: xllify_demo
