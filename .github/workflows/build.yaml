@@ -2,7 +2,9 @@ name: Demo XLL build
 
 permissions:
   contents: write
-
+  actions: read
+  checks: write
+  
 on:
   release:
     types: [published]
