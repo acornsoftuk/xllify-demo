@@ -2,6 +2,8 @@ name: Demo XLL build
 
 permissions:
   contents: write
+  actions: read
+  checks: write
 
 on:
   release:
@@ -30,7 +32,7 @@ jobs:
       # Do with it what you want. Sign it (recommended), upload it to a release, cloud storage
       # etc...
 
-      - name: Upload artifact
+      - name: Upload XLL to workflow job
         uses: actions/upload-artifact@v4
         with:
           name: xllify_demo
