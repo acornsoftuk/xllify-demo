@@ -408,6 +408,56 @@ These functions generate sample data for testing and demonstration purposes.
 
 ---
 
+### bs.State
+
+**File:** `black_scholes.luau:103`
+
+**Description:** Determine market state from Black-Scholes call and put prices
+
+**Parameters:**
+
+- `callPrice` (number): Call option price
+- `putPrice` (number): Put option price
+- `S` (number): Current stock price
+- `K` (number): Strike price
+- `T` (number): Time to expiration (years)
+- `r` (number): Risk-free interest rate
+
+**Returns:** String describing the market state
+
+**Examples:**
+
+```excel
+// Analyze market state from option prices
+=bs.State(10.45, 5.57, 100, 100, 1, 0.05)
+// Returns: "ATM" (at-the-money)
+
+// Check deep in-the-money scenario
+=bs.State(15.00, 2.50, 110, 100, 1, 0.05)
+// Returns: "Deep ITM Call / OTM Put"
+
+// Detect put-call parity violations
+=bs.State(12.00, 8.00, 100, 100, 1, 0.05)
+// May return: "ATM [Parity Violation]"
+```
+
+**Market States:**
+
+- **Deep ITM Call / OTM Put**: Spot > 1.05 × Strike
+- **ITM Call / OTM Put**: Spot > 1.01 × Strike
+- **ATM**: 0.99 ≤ Spot/Strike ≤ 1.01
+- **OTM Call / ITM Put**: 0.95 ≤ Spot/Strike < 0.99
+- **OTM Call / Deep ITM Put**: Spot < 0.95 × Strike
+
+**Notes:**
+
+- Uses put-call parity to detect arbitrage opportunities: C - P = S - K×e^(-rT)
+- Flags "[Parity Violation]" if deviation exceeds 1% of spot price
+- Useful for validating option pricing consistency
+- Moneyness categories based on spot/strike ratio
+
+---
+
 ## Portfolio Analytics
 
 Functions for analyzing portfolio performance and risk metrics.
