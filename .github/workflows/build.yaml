@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: xllify Build
         id: xllify
-        uses: acornsoftuk/xllify-build@v0.4.15
+        uses: acornsoftuk/xllify-build@v0.5.2
         with:
           xll_filename: xllify_demo
           luau_scripts: |
