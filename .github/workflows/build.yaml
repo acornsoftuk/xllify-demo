@@ -1,4 +1,4 @@
-name: Demo XLL build
+name: Demo XLL Luau
 
 permissions:
   contents: write
@@ -25,7 +25,6 @@ jobs:
           embed_scripts: |
             simple.luau
             black_scholes.luau
-            black_scholes.py
             trading.luau
             trading_demodata.luau
           xllify_key: earlyadopter
