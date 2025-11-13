@@ -1,8 +1,8 @@
-# xllify-demo Function Documentation
+# xllify-demo Luau demo functions
 
 This document provides comprehensive documentation for all custom Excel functions implemented in this repository using [xllify.com](https://xllify.com).
 
-> **Note:** Some examples in this repository were generated with xllifyAI and may contain errors. Always validate results before using in production environments.
+> **Note:** Some examples in this repository were generated with AI and may contain errors. Always validate results before using in production environments.
 
 ## Table of Contents
 
@@ -23,7 +23,7 @@ This document provides comprehensive documentation for all custom Excel function
 
 ### xllify.Demo.Hello
 
-**File:** `simple.luau:1`
+**File:** [simple.luau:1](simple.luau:1)
 
 **Description:** Says hello!
 
@@ -47,7 +47,7 @@ This document provides comprehensive documentation for all custom Excel function
 
 ### xllify.Demo.AgeCategory
 
-**File:** `simple.luau:13`
+**File:** [simple.luau:13](simple.luau:13)
 
 **Description:** Determines your life stage based on age
 
@@ -85,7 +85,7 @@ This document provides comprehensive documentation for all custom Excel function
 
 ### xllify.Demo.Portfolio
 
-**File:** `simple.luau:34`
+**File:** [simple.luau:34](simple.luau:34)
 
 **Description:** Generate sample portfolio holdings
 
@@ -140,7 +140,7 @@ These functions generate sample data for testing and demonstration purposes.
 
 ### Demo.PriceSeries
 
-**File:** `trading_demodata.luau:9`
+**File:** [trading_demodata.luau:9](trading_demodata.luau:9)
 
 **Description:** Generate sample price series for testing using geometric Brownian motion.
 
@@ -170,7 +170,7 @@ These functions generate sample data for testing and demonstration purposes.
 
 ### Demo.VolumeSeries
 
-**File:** `trading_demodata.luau:51`
+**File:** [trading_demodata.luau:51](trading_demodata.luau:51)
 
 **Description:** Generate sample volume data with realistic variation.
 
@@ -196,7 +196,7 @@ These functions generate sample data for testing and demonstration purposes.
 
 ### Demo.ExecutionFills
 
-**File:** `trading_demodata.luau:89`
+**File:** [trading_demodata.luau:89](trading_demodata.luau:89)
 
 **Description:** Generate sample execution fill data showing multiple fills at different prices.
 
@@ -223,7 +223,7 @@ These functions generate sample data for testing and demonstration purposes.
 
 ### Demo.OptionChain
 
-**File:** `trading_demodata.luau:134`
+**File:** [trading_demodata.luau:134](trading_demodata.luau:134)
 
 **Description:** Generate option chain with strike prices around the spot price.
 
@@ -249,7 +249,7 @@ These functions generate sample data for testing and demonstration purposes.
 
 ### Demo.YieldCurve
 
-**File:** `trading_demodata.luau:160`
+**File:** [trading_demodata.luau:160](trading_demodata.luau:160)
 
 **Description:** Generate sample yield curve using the Nelson-Siegel model.
 
@@ -275,7 +275,7 @@ These functions generate sample data for testing and demonstration purposes.
 
 ### Demo.CorrelationMatrix
 
-**File:** `trading_demodata.luau:188`
+**File:** [trading_demodata.luau:188](trading_demodata.luau:188)
 
 **Description:** Generate sample correlation matrix.
 
@@ -300,7 +300,7 @@ These functions generate sample data for testing and demonstration purposes.
 
 ### Demo.OHLCV
 
-**File:** `trading_demodata.luau:227`
+**File:** [trading_demodata.luau:227](trading_demodata.luau:227)
 
 **Description:** Generate OHLCV (Open, High, Low, Close, Volume) candlestick data.
 
@@ -327,7 +327,7 @@ These functions generate sample data for testing and demonstration purposes.
 
 ### Demo.Portfolio
 
-**File:** `trading_demodata.luau:278`
+**File:** [trading_demodata.luau:278](trading_demodata.luau:278)
 
 **Description:** Generate sample portfolio holdings.
 
@@ -354,7 +354,7 @@ These functions generate sample data for testing and demonstration purposes.
 
 ### bs.Call
 
-**File:** `black_scholes.luau:21`
+**File:** [black_scholes.luau:46](black_scholes.luau:46)
 
 **Description:** Black-Scholes call option price
 
@@ -379,7 +379,7 @@ These functions generate sample data for testing and demonstration purposes.
 
 ### bs.Put
 
-**File:** `black_scholes.luau:37`
+**File:** [black_scholes.luau:62](black_scholes.luau:62)
 
 **Description:** Black-Scholes put option price
 
@@ -410,7 +410,7 @@ These functions generate sample data for testing and demonstration purposes.
 
 ### bs.State
 
-**File:** `black_scholes.luau:103`
+**File:** [black_scholes.luau:102](black_scholes.luau:102)
 
 **Description:** Determine market state from Black-Scholes call and put prices
 
@@ -464,7 +464,7 @@ Functions for analyzing portfolio performance and risk metrics.
 
 ### Portfolio.Returns
 
-**File:** `trading.luau:10`
+**File:** [trading.luau:10](trading.luau:10)
 
 **Description:** Calculate returns from a price series.
 
@@ -492,7 +492,7 @@ Functions for analyzing portfolio performance and risk metrics.
 
 ### Portfolio.Volatility
 
-**File:** `trading.luau:35`
+**File:** [trading.luau:35](trading.luau:35)
 
 **Description:** Calculate annualized volatility from returns.
 
@@ -524,7 +524,7 @@ Functions for analyzing portfolio performance and risk metrics.
 
 ### Portfolio.Sharpe
 
-**File:** `trading.luau:78`
+**File:** [trading.luau:78](trading.luau:78)
 
 **Description:** Calculate Sharpe ratio (excess return divided by volatility).
 
@@ -558,7 +558,7 @@ Functions for simulating market scenarios and pricing via Monte Carlo.
 
 ### Simulation.PricePath
 
-**File:** `trading.luau:139`
+**File:** [trading.luau:139](trading.luau:139)
 
 **Description:** Simulate geometric Brownian motion price path.
 
@@ -590,7 +590,7 @@ Functions for simulating market scenarios and pricing via Monte Carlo.
 
 ### Simulation.MonteCarlo
 
-**File:** `trading.luau:165`
+**File:** [trading.luau:165](trading.luau:165)
 
 **Description:** Run Monte Carlo option pricing simulation.
 
@@ -631,7 +631,7 @@ Functions for analyzing trade execution quality.
 
 ### Trading.VWAP
 
-**File:** `trading.luau:204`
+**File:** [trading.luau:204](trading.luau:204)
 
 **Description:** Calculate volume-weighted average price.
 
@@ -660,7 +660,7 @@ Functions for analyzing trade execution quality.
 
 ### Trading.Slippage
 
-**File:** `trading.luau:235`
+**File:** [trading.luau:235](trading.luau:235)
 
 **Description:** Calculate execution slippage versus benchmark price.
 
@@ -694,7 +694,7 @@ Classic technical indicators for price analysis.
 
 ### Technical.SMA
 
-**File:** `trading.luau:270`
+**File:** [trading.luau:270](trading.luau:270)
 
 **Description:** Simple moving average.
 
@@ -726,7 +726,7 @@ Classic technical indicators for price analysis.
 
 ### Technical.EMA
 
-**File:** `trading.luau:306`
+**File:** [trading.luau:306](trading.luau:306)
 
 **Description:** Exponential moving average.
 
@@ -756,7 +756,7 @@ Classic technical indicators for price analysis.
 
 ### Technical.RSI
 
-**File:** `trading.luau:349`
+**File:** [trading.luau:349](trading.luau:349)
 
 **Description:** Relative Strength Index.
 
@@ -790,7 +790,7 @@ Bond pricing and duration calculations.
 
 ### Bond.Price
 
-**File:** `trading.luau:429`
+**File:** [trading.luau:429](trading.luau:429)
 
 **Description:** Calculate bond price from yield.
 
@@ -822,7 +822,7 @@ Bond pricing and duration calculations.
 
 ### Bond.Duration
 
-**File:** `trading.luau:457`
+**File:** [trading.luau:457](trading.luau:457)
 
 **Description:** Calculate Macaulay duration.
 
@@ -858,7 +858,7 @@ Value at Risk and Expected Shortfall calculations.
 
 ### Risk.VaR
 
-**File:** `trading.luau:494`
+**File:** [trading.luau:494](trading.luau:494)
 
 **Description:** Calculate Value at Risk using historical method.
 
@@ -891,7 +891,7 @@ Value at Risk and Expected Shortfall calculations.
 
 ### Risk.CVaR
 
-**File:** `trading.luau:522`
+**File:** [trading.luau:522](trading.luau:522)
 
 **Description:** Conditional VaR (Expected Shortfall) - average loss beyond VaR threshold.
 
@@ -925,7 +925,7 @@ Sensitivity measures for options (delta, gamma, vega, theta).
 
 ### Greeks.Delta
 
-**File:** `trading.luau:576`
+**File:** [trading.luau:576](trading.luau:576)
 
 **Description:** Option delta - sensitivity to underlying price changes.
 
@@ -962,7 +962,7 @@ Sensitivity measures for options (delta, gamma, vega, theta).
 
 ### Greeks.Gamma
 
-**File:** `trading.luau:598`
+**File:** [trading.luau:598](trading.luau:598)
 
 **Description:** Option gamma - rate of change of delta.
 
@@ -995,7 +995,7 @@ Sensitivity measures for options (delta, gamma, vega, theta).
 
 ### Greeks.Vega
 
-**File:** `trading.luau:612`
+**File:** [trading.luau:612](trading.luau:612)
 
 **Description:** Option vega - sensitivity to volatility changes.
 
@@ -1028,7 +1028,7 @@ Sensitivity measures for options (delta, gamma, vega, theta).
 
 ### Greeks.Theta
 
-**File:** `trading.luau:626`
+**File:** [trading.luau:626](trading.luau:626)
 
 **Description:** Option theta - time decay.
 
