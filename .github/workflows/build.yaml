@@ -21,12 +21,12 @@ jobs:
         uses: xllifycom/xllify-build@v0.7.7
         with:
           xll_filename: xllify_demo
-          luau_scripts: |
+          embed_scripts: |
             simple.luau
             black_scholes.luau
             trading.luau
             trading_demodata.luau
-          xllify_key: not-needed
+          xllify_key: earlyadopter
 
       # The .xll is now in your workspace at path in ${{ steps.xllify.outputs.xll_path }}
       # Do with it what you want. Sign it (recommended), upload it to a release, cloud storage
