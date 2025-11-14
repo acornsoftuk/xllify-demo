@@ -9,3 +9,5 @@ py generate.py
 # package xll
 xllify duck.xll duckdb_stock_demo.py --py-requirements requirements.txt
 ```
+
+![demo](./demo.png)
