@@ -1,0 +1,62 @@
+name: Demo XLL Perftest
+
+permissions:
+  contents: write
+  actions: read
+  checks: write
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: xllify Luau perftest
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: xllify luau
+        id: xllify
+        uses: xllifycom/xllify-build@v0.8.3
+        with:
+          xll_filename: xllify_perftest_luau
+          embed_scripts: |
+            perftest/luau/random.luau
+          xllify_key: earlyadopter
+          xllify_version: 0.8.6
+
+      - name: Upload XLL to workflow job
+        uses: actions/upload-artifact@v4
+        with:
+          name: xllify_perftest_luau
+          path: ${{ steps.xllify.outputs.xll_path }}
+
+      - name: Upload XLL to release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ${{ steps.xllify.outputs.xll_path }}
+
+      - name: xllify python
+        id: xllipy
+        uses: xllifycom/xllify-build@v0.8.3
+        with:
+          xll_filename: xllify_perftest_py
+          embed_scripts: |
+            perftest/python/perftest.py
+          xllify_key: earlyadopter
+          xllify_version: 0.8.6
+          python_requirements: perftest/python/requirementx.txt
+
+      - name: Upload XLL to workflow job
+        uses: actions/upload-artifact@v4
+        with:
+          name: xllify_perftest_py
+          path: ${{ steps.xllipy.outputs.xll_path }}
+
+      - name: Upload XLL to release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ${{ steps.xllipy.outputs.xll_path }}
