@@ -10,6 +10,18 @@ A video demonstrating this repo is here: https://www.youtube.com/watch?v=BvsvYdj
 
 For more information about the action, see https://github.com/xllifycom/xllify-build or the workflow in this repo.
 
+## Examples
+
+### DuckDB Analytics Demo
+
+The [duckdb](./duckdb) directory contains a comprehensive example of integrating DuckDB's analytical capabilities with Excel. This demo showcases:
+- In-memory database with 1.25M rows of synthetic stock market data
+- Advanced SQL window functions (moving averages, rankings, percentiles)
+- Dynamic array results that spill into Excel cells
+- Pre-built analytical queries as Excel functions
+
+See the [DuckDB demo README](./duckdb/README.md) for detailed documentation.
+
 ## Testing
 
 If you include a `tests/` directory in your repository, the xllify-build action will automatically discover and run your tests during the build process. If no `tests/` directory exists, the test runner will be skipped and the build will proceed normally. This makes testing completely optional but easy to add when you're ready.
