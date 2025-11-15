@@ -28,6 +28,7 @@ jobs:
             trading_demodata.luau
             perftest/luau/random.luau
           xllify_key: earlyadopter
+          xllify_version: 0.8.6
 
       # The .xll is now in your workspace at path in ${{ steps.xllify.outputs.xll_path }}
       # Do with it what you want. Sign it (recommended), upload it to a release, cloud storage
