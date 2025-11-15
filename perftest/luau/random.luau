@@ -1,3 +1,3 @@
-xllify.ExcelFunction({name="test_func"}, function(discarded_value)
+xllify.ExcelFunction({name="test_func", description="Random value"}, function(discarded_value)
     return math.random()
 end)
