@@ -26,8 +26,6 @@ See the [DuckDB demo README](./duckdb/README.md) for detailed documentation. It 
 
 ## perftest
 
-# perftest
-
 Simple performance test to exercise calling a function 5000 times. The single function implementation `test_func` is just a simple random number generator. Luau and Python versions have been implemented.
 
 The sheet `exercise.xlsx` contains 5000 rows. Change the seed cell to recalculate. This workbook will work for both the luau and Python variants, but not at the same time of course.
