@@ -1,0 +1,45 @@
+name: Demo XLL DuckDB/Python
+
+permissions:
+  contents: write
+  actions: read
+  checks: write
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: xllify Build duckdb demo
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: xllify Build
+        id: xllify
+        uses: xllifycom/xllify-build@v0.8.3
+        with:
+          xll_filename: xllify_demo_duckdb
+          embed_scripts: |
+            duckdb/duckdb_stock_demo.py
+          xllify_key: earlyadopter
+          python_entrypoint: duckdb_stock_demo.py
+          python_requirements: duckdb/requirements.txt
+          xllify_version: 0.8.6
+
+      # The .xll is now in your workspace at path in ${{ steps.xllify.outputs.xll_path }}
+      # Do with it what you want. Sign it (recommended), upload it to a release, cloud storage
+      # etc...
+
+      - name: Upload XLL to workflow job
+        uses: actions/upload-artifact@v4
+        with:
+          name: xllify_demo_duckdb
+          path: ${{ steps.xllify.outputs.xll_path }}
+
+      - name: Upload XLL to release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ${{ steps.xllify.outputs.xll_path }}
