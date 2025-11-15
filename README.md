@@ -1,12 +1,8 @@
 # xllify-demo
 
-This repo demonstrates using xllify and the [xllify-build](https://github.com/marketplace/actions/xllify-build) action to package some simple Luau functions into an .xll. The workflow defined in [build.yaml](https://github.com/xllifycom/xllify-demo/blob/main/.github/workflows/build.yaml).
+This repo demonstrates using xllify and the [xllify-build](https://github.com/marketplace/actions/xllify-build) action to package some simple Luau functions into an .xll. The workflows are defined in [build.yaml](https://github.com/xllifycom/xllify-demo/blob/main/.github/workflows/build.yaml).
 
-For comprehensive documentation of all available functions, see [DOCS.md](./DOCS.md). Note that xllifyAI wrote some of this code so best not to use these for anything other than an illustration, unless of course you know what you're doing.
-
-The action handles the build and packaging process. An .xll file for Microsoft Excel on Windows is attached when a release is created in this repo. See https://xllify.com for more information.
-
-A video demonstrating this repo is here: https://www.youtube.com/watch?v=BvsvYdjh5N8
+You can download pre-built XLLs from the [latest release](https://github.com/xllifycom/xllify-demo/releases/latest).
 
 For more information about the action, see https://github.com/xllifycom/xllify-build or the workflow in this repo.
 
