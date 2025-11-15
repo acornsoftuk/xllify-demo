@@ -133,6 +133,7 @@ To add your own queries:
 - Queries typically execute in under 100ms
 - Resultset size is limited to prevent overwhelming Excel (configurable in code)
 - All data is in-memory and lost when Excel closes (that's fine, it's only a demo)
+- Data is naively cached after first query run, so use `xllify-clear-cache` to re-run
 
 ## Links
 
