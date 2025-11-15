@@ -26,7 +26,7 @@ jobs:
             black_scholes.py
           xllify_key: earlyadopter
           python_entrypoint: black_scholes.py
-          xllify_version: 0.8.3
+          xllify_version: 0.8.6
 
       # The .xll is now in your workspace at path in ${{ steps.xllify.outputs.xll_path }}
       # Do with it what you want. Sign it (recommended), upload it to a release, cloud storage
