@@ -44,13 +44,12 @@ jobs:
       - uses: actions/checkout@v4
       - name: xllify
         id: xllify
-        uses: xllifycom/xllify-build@v0.8.3
+        uses: xllifycom/xllify-build@v0.8.9
         with:
           xll_filename: xllify_perftest_python
           embed_scripts: |
             perftest/python/perftest.py
           xllify_key: earlyadopter
-          xllify_version: 0.8.6
           python_requirements: perftest/python/requirements.txt
 
       - name: Upload XLL to workflow job
