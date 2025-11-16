@@ -10,4 +10,4 @@ The sheet `exercise.xlsx` contains 5000 rows. Change the seed cell to recalculat
 - Change seed value
 - Observe recalc
 
-Luau uses multithreaded recalculation. Multi-process support for Python is coming soon. (It's actually in the codebase already just not exposed.)
+Luau uses multithreaded recalculation. Python starts 3 worker processes (configurable with `configure_spawn_count`) and load balances between them. This avoids a single core being monopolised or the GIL slowing things down.
