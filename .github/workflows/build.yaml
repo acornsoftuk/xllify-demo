@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: xllify Build
         id: xllify
-        uses: xllifycom/xllify-build@v0.8.3
+        uses: xllifycom/xllify-build@v0.8.9
         with:
           xll_filename: xllify_demo
           embed_scripts: |
@@ -26,9 +26,7 @@ jobs:
             black_scholes.luau
             trading.luau
             trading_demodata.luau
-            perftest/luau/random.luau
           xllify_key: earlyadopter
-          xllify_version: 0.8.6
 
       # The .xll is now in your workspace at path in ${{ steps.xllify.outputs.xll_path }}
       # Do with it what you want. Sign it (recommended), upload it to a release, cloud storage
