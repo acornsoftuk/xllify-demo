@@ -4,9 +4,9 @@ This repo demonstrates using xllify and the [xllify-build](https://github.com/ma
 
 You can download pre-built XLLs from the [latest release](https://github.com/xllifycom/xllify-demo/releases/latest).
 
-- xllify_demo.xll - lua functions see [DOCS.md](https://github.com/xllifycom/xllify-demo/blob/main/DOCS.md)
+- xllify_demo.xll - lua functions see [DOCS.md](https://github.com/xllifycom/xllify-demo/blob/main/DOCS.md); see [test sheet for Black Scholes](./benchmark/black_scholes_luau.xlsm)
 - xllify_demo_duckdb.xll - see [duckdb/](https://github.com/xllifycom/xllify-demo/blob/main/duckdb)
-- xllify_demo_python.xll - see [black_scholes.py](https://github.com/xllifycom/xllify-demo/blob/main/black_scholes.py)
+- xllify_demo_python.xll - see [black_scholes.py](https://github.com/xllifycom/xllify-demo/blob/main/black_scholes.py); see [test sheet for Black Scholes](./benchmark/black_scholes_py.xlsm)
 - xllify_perftest_luau.xll - see [perftest/luau/](https://github.com/xllifycom/xllify-demo/blob/main/perftest/)
 - xllify_perftest_python.xll - see [perftest/python/](https://github.com/xllifycom/xllify-demo/blob/main/perftest/)
 
