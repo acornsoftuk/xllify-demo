@@ -2,7 +2,7 @@
 
 Extremely simple performance test to exercise calling a function 5000 times. The function implementation is just a simple random number generator. Download a pre-built version [from the latest release](https://github.com/xllifycom/xllify-demo/releases/latest)
 
-The sheet `exercise.xlsm` contains 5000 rows. Change the seed cell to recalculate. This workbook will work for both the luau and Python variants.
+The sheet `exercise.xlsm` contains 5000 rows. Hit one of the buttons to recalculate. This workbook will work for both the luau and Python variants.
 
 - Load exercise.xlsx
 - Load xllify_demo_luau.xll or xllify_demo_python.xll
