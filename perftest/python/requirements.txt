@@ -1,2 +1,2 @@
 numpy
-xllify==0.9.3
+xllify
