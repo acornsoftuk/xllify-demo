@@ -51,6 +51,7 @@ jobs:
             perftest/python/perftest.py
           xllify_key: earlyadopter
           python_requirements: perftest/python/requirements.txt
+          xllify_version: 0.9.3
 
       - name: Upload XLL to workflow job
         uses: actions/upload-artifact@v4
