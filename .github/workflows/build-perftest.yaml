@@ -24,7 +24,7 @@ jobs:
           embed_scripts: |
             perftest/luau/random.luau
           xllify_key: earlyadopter
-          xllify_version: 0.9.7
+          xllify_version: 0.9.9
 
       - name: Upload XLL to workflow job
         uses: actions/upload-artifact@v4
@@ -52,7 +52,7 @@ jobs:
             perftest/python/perftest.py
           xllify_key: earlyadopter
           python_requirements: perftest/python/requirements.txt
-          xllify_version: 0.9.7
+          xllify_version: 0.9.9
 
       - name: Upload XLL to workflow job
         uses: actions/upload-artifact@v4
