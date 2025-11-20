@@ -75,7 +75,7 @@ def black_scholes(
         return K * math.exp(-r * T) * norm_cdf(-d2) - S * norm_cdf(-d1)
 
 
-@xllify.fn("xllify.BSCall")
+@xllify.fn("xllipy.BSCall")
 def call_price(S: float, K: float, T: float, r: float, sigma: float) -> float:
     """
     Calculate Black-Scholes call option price.
