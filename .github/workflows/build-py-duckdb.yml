@@ -24,6 +24,7 @@ jobs:
           embed_scripts: |
             duckdb/duckdb_stock_demo.py
           xllify_key: earlyadopter
+          xllify_version: 0.9.10
           python_entrypoint: duckdb_stock_demo.py
           python_requirements: duckdb/requirements.txt
 
