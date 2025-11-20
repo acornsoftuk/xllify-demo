@@ -22,7 +22,6 @@ jobs:
         with:
           xll_filename: xllify_demo_python
           embed_scripts: |
-            simple.luau
             black_scholes.py
           xllify_key: earlyadopter
           xllify_version: 0.9.10
