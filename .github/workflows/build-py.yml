@@ -25,6 +25,7 @@ jobs:
             simple.luau
             black_scholes.py
           xllify_key: earlyadopter
+          xllify_version: 0.9.10
           python_entrypoint: black_scholes.py
 
       # The .xll is now in your workspace at path in ${{ steps.xllify.outputs.xll_path }}
