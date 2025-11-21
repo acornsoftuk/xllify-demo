@@ -25,6 +25,7 @@ jobs:
           embed_scripts: |
             perftest/luau/random.luau
           xllify_key: earlyadopter
+          xllify_version: 0.9.10
 
       - name: Write signing file
         shell: pwsh
@@ -64,6 +65,7 @@ jobs:
             perftest/python/perftest.py
           xllify_key: earlyadopter
           python_requirements: perftest/python/requirements.txt
+          xllify_version: 0.9.10
 
       - name: Upload XLL to workflow job
         uses: actions/upload-artifact@v4
