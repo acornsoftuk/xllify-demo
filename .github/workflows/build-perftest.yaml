@@ -16,6 +16,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
+      
       - name: xllify luau
         id: xllify
         uses: xllifycom/xllify-build@v0.9.6
@@ -24,6 +25,18 @@ jobs:
           embed_scripts: |
             perftest/luau/random.luau
           xllify_key: earlyadopter
+
+      - name: Write signing file
+        shell: pwsh
+        run: |
+          $pfxBytes = [Convert]::FromBase64String("${{ secrets.XLLIFY_PFX_BASE64 }}")
+          [IO.File]::WriteAllBytes("xllify.pfx", $pfxBytes)
+          
+      - name: Self sign
+        shell: pwsh
+        run: |
+          $signtool = Get-ChildItem -Path "C:\Program Files (x86)\Windows Kits" -Recurse -Filter "signtool.exe" | Select-Object -First 1
+          & $signtool.FullName sign /fd SHA256 /f xllify.pfx /p ${{ secrets.XLLIFY_PW }} /t http://timestamp.digicert.com ${{ steps.xllify.outputs.xll_path }}
 
       - name: Upload XLL to workflow job
         uses: actions/upload-artifact@v4
